@@ -1,0 +1,207 @@
+/* GLOBAL #########################################*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  color: #FFD9E1;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* This accounts for the fixed header */
+}
+h1, h2, h3, h4, h5, h6,
+p, a, span, li, td, th {
+  font-family: 'Playfair Display', serif;
+
+}
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.text-custom {
+  color: #075273 !important;
+}
+
+/* BODY #########################################*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FFD9E1;
+}
+main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+footer {
+  flex-shrink: 0;
+}
+
+
+
+/*HEADER, FOOTER ######################################### */
+header, footer {
+  padding: 2rem 0;     /* Tight padding */
+  font-size: 1rem;     /* Prevent accidental enlargement */
+}
+
+header.py-4, footer.py-4 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+footer a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover {
+  font-weight: bold;
+}
+.bg-custom {
+  background-color: #075273;
+}
+/* Set default color and remove underline */
+.nav-link {
+  color: #FFD9E1 !important;
+  text-decoration: none;
+}
+/* Underline on hover */
+.nav-link:hover {
+  font-weight: bold; /* This makes it bold */
+}
+.nav-link.active {
+  text-decoration: underline;
+}
+
+
+/*TEXT BOX  #########################################*/
+.text-box, .text-box-contact {
+  color: #075273 !important;
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 1.2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-box h2 {
+  margin-bottom: 1.5rem !important;
+}
+.text-box-contact {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  padding: 2rem !important;
+}
+
+.text-box-contact h2 {
+  margin-bottom: 3rem !important;
+}
+
+.text-box-contact .d-flex {
+  gap: 1rem !important;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*BUTTONS ######################################### */
+/* Custom Button Styling */
+.btn-custom {
+    background-color: #6C0E50;
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    border-radius: 25px;
+    min-width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.btn-custom:hover {
+    background-color: #BEBCD3;
+    color: #0B2632;
+    transform: translateY(-2px);
+}
+
+/*CONTACT PAGE ######################################### */
+.contact-link {
+  color: #075273;
+  transition: font-weight 0.2s ease;
+}
+
+.contact-link:hover {
+  font-weight: bold;
+}
+
+/*SERVICES  PAGE######################################### */
+/* Service Sections */
+.service-section {
+  border-color: #075273 !important;
+  min-height: 150px;
+}
+
+.service-section .border-end {
+  border-color: #075273 !important;
+}
+
+.service-section h3 {
+  color: #075273;
+  font-size: 1.5rem;
+}
+
+.service-section h4 {
+  color: #075273;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.service-section h4:first-child {
+  margin-top: 0;
+}
+.service-section p {
+  color: #075273;
+  font-size: 1.1rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #075273;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.dropdown-item {
+  color: #FFD9E1 !important;
+  padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:hover {
+  background-color: #FFD9E1;
+  color: #075273 !important;
+  font-weight: bold;
+}
+
+.dropdown-toggle::after {
+  color: #FFD9E1;
+}
