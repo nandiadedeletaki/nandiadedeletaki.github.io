@@ -9,3 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+window.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.add('visible');
+  document.body.classList.add('fade-in-blur');
+});

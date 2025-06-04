@@ -19,7 +19,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body class="fade-in-blur">
 
   <!-- Header -->
   <header class="py-3 border-bottom bg-custom">
@@ -47,30 +47,33 @@
 
 
 <!-- Main Content -->
-<main class="container my-5 flex-grow-1 d-flex justify-content-center">
-    <div class="col-11 mb-5">
-        <div class="d-flex flex-column flex-md-row border-bottom pb-5 service-section">
-          <div class="col-12 col-md-5 pe-md-5 border-end mb-4 mb-md-0">
-            <h1 class="mb-0 text-custom">Nandia</h1>
-            <h1 class="mb-0 text-custom">Dedeletakis</h1>
-          </div>
-          <div class="col-12 col-md-7 ps-md-5">
-            <h4 class="text-custom">About Me</h4>
-            <p class="mb-0 text-custom">
-                I am a researcher and educator with expertise in English Literature, 
-                academic writing, and interdisciplinary research. I hold a BA in 
-                English and American Literature from the University of Kent and an MA in 
-                Comparative Literatures and Cultures from the University of Bristol. 
-                I am currently completing a PhD at the University of Kent. 
-                I have taught at both secondary and tertiary levels and have developed 
-                research across literary, cultural, and spatial disciplines.
-            </p>
-            <div class="d-flex justify-content-center mt-4">
-              <a href="contact.html" class="btn btn-custom text-decoration-none">Get in Touch!</a>
-            </div>
-          </div>
+<main class="container my-5 flex-grow-1 d-flex justify-content-center position-relative" style="overflow: hidden;">
+  <div class="background-photos-about position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-between align-items-center" style="z-index: 1; pointer-events: none; padding: 0 2rem;">
+    <div class="bg-photo-about photo-1-about mx-2"></div>
+  </div>
+  <div class="col-11 mb-5 position-relative" style="z-index: 2;">
+    <div class="d-flex flex-column flex-md-row pb-5 service-section">
+      <div class="col-12 col-md-5 pe-md-5 mb-4 mb-md-0">
+        <h1 class="mb-0 text-custom">Nandia</h1>
+        <h1 class="mb-0 text-custom">Dedeletakis</h1>
+      </div>
+      <div class="col-12 col-md-7 ps-md-5">
+        <h4 class="text-custom">About Me</h4>
+        <p class="mb-0 text-custom">
+            I am a researcher and educator with expertise in English Literature, 
+            academic writing, and interdisciplinary research. I hold a BA in 
+            English and American Literature from the University of Kent and an MA in 
+            Comparative Literatures and Cultures from the University of Bristol. 
+            I am currently completing a PhD at the University of Kent. 
+            I have taught at both secondary and tertiary levels and have developed 
+            research across literary, cultural, and spatial disciplines.
+        </p>
+        <div class="d-flex justify-content-center mt-4">
+          <a href="contact.html" class="btn btn-custom text-decoration-none">Get in Touch!</a>
         </div>
       </div>
+    </div>
+  </div>
 </main>
 
 
