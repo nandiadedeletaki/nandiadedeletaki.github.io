@@ -111,7 +111,6 @@ footer a:hover {
   border: none !important;
   box-shadow: none !important;
   font-size: 1.2rem;
-  font-weight: bold;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -144,6 +143,8 @@ footer a:hover {
   padding: 1rem 1.5rem;
   border-radius: 10px;
   display: inline-block;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 /*BUTTONS ######################################### */
