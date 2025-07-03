@@ -4,14 +4,19 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
-  color: #FFD9E1;
+  color: #1E1E1E;
   scroll-behavior: smooth;
   scroll-padding-top: 100px; /* This accounts for the fixed header */
 }
-h1, h2, h3, h4, h5, h6,
-p, a, span, li, td, th {
-  font-family: 'Playfair Display', serif;
 
+/* Apply Playfair Display to all text elements */
+* {
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, span, li, td, th, div, button, input, textarea, select, label {
+  font-family: 'Playfair Display', serif;
 }
 h1, h2, h3 {
   font-weight: 600;
@@ -19,7 +24,7 @@ h1, h2, h3 {
 }
 
 .text-custom {
-  color: #ffffff !important;
+  color: #1E1E1E !important;
 }
 /* Page fade-in animation */
 /* .page-fade {
@@ -46,7 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #6c0e504f;
+  background-color: #F9F6EE;
 }
 main {
   flex: 1 0 auto;
@@ -62,8 +67,20 @@ footer {
 header, footer {
   padding: 2rem 0;     /* Tight padding */
   font-size: 1rem;     /* Prevent accidental enlargement */
+  font-style: italic;
 }
 
+header.border-bottom {
+  border-bottom: 2px solid #1E1E1E !important;
+}
+
+footer.border-top {
+  border-top: 2px solid #1E1E1E !important;
+}
+.header-title {
+  font-style: normal;
+  font-weight: bold;
+}
 header.py-4, footer.py-4 {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
@@ -77,11 +94,11 @@ footer a:hover {
   font-weight: bold;
 }
 .bg-custom {
-  background-color: #075273;
+  background-color: #F9F6EE;
 }
 /* Set default color and remove underline */
 .nav-link {
-  color: #FFD9E1 !important;
+  color: #1E1E1E !important;
   text-decoration: none;
 }
 /* Underline on hover */
@@ -95,13 +112,13 @@ footer a:hover {
 
 /*TEXT BOX  #########################################*/
 .text-box, .text-box * {
-  color: #ffffff !important;
+  color: #1E1E1E !important;
 }
 
 .text-box, .text-box-contact {
   max-width: 600px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #1E1E1E;
   padding: 2rem;
   margin: 1rem;
   border-radius: 8px;
@@ -139,20 +156,20 @@ footer a:hover {
 }
 
 .text-box p, p.text-custom {
-  background: rgba(108, 14, 80, 0.5);
   padding: 1rem 1.5rem;
   border-radius: 10px;
   display: inline-block;
   padding-left: 2rem !important;
   padding-right: 2rem !important;
+  color: #ffffff !important;
 }
 
 /*BUTTONS ######################################### */
 /* Custom Button Styling */
 .btn-custom {
-    background-color: #6C0E50;
-    color: #ffffff;
-    border: none;
+    /* background-color: #6C0E50; */
+    color: #ffffff !important;
+    border: 1px solid #ffffff;
     transition: all 0.3s ease;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
@@ -166,39 +183,42 @@ footer a:hover {
 }
 
 .btn-custom:hover {
-    background-color: #BEBCD3;
-    color: #0B2632;
+    background-color: #B2A2A8;
+    color: #1E1E1E;
     transform: translateY(-2px);
 }
 
 /*CONTACT PAGE ######################################### */
 .contact-link {
-  color: #075273;
+  color: #1E1E1E;
   transition: font-weight 0.2s ease;
 }
 
 .contact-link:hover {
   font-weight: bold;
 }
+.contact-section .border-end {
+  border-color: #1E1E1E !important;
+}
 
 /*SERVICES  PAGE######################################### */
 /* Service Sections */
 .service-section {
-  border-color: #075273 !important;
+  border-color: #1E1E1E !important;
   min-height: 150px;
 }
 
 .service-section .border-end {
-  border-color: #075273 !important;
+  border-color: #1E1E1E !important;
 }
 
 .service-section h3 {
-  color: #075273;
+  color: #1E1E1E;
   font-size: 1.5rem;
 }
 
 .service-section h4 {
-  color: #075273;
+  color: #1E1E1E;
   font-size: 1.2rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -208,33 +228,34 @@ footer a:hover {
   margin-top: 0;
 }
 .service-section p {
-  color: #075273;
+  color: #1E1E1E;
   font-size: 1.1rem;
   line-height: 2;
   padding: 1rem 0;
 }
 /* Dropdown Menu */
 .dropdown-menu {
-  background-color: #075273;
+  background-color: #727064;
   border: none;
   border-radius: 8px;
   margin-top: 0.5rem;
 }
 
 .dropdown-item {
-  color: #FFD9E1 !important;
+  color: #ffffff !important;
   padding: 0.5rem 1.5rem;
 }
 
 .dropdown-item:hover {
-  background-color: #FFD9E1;
-  color: #075273 !important;
+  background-color: transparent;
+  color: #1E1E1E !important;
   font-weight: bold;
 }
 
 .dropdown-toggle::after {
-  color: #FFD9E1;
+  color: #B2A2A8;
 }
+
 
 /* BACKGROUND PHOTOS IN MAIN ############################### */
 .background-photos,  .background-photos-about {
@@ -254,7 +275,6 @@ footer a:hover {
   min-height: 100%;
   max-width: 100%;
   margin: 0;
-  border-radius: 18px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -262,24 +282,15 @@ footer a:hover {
   opacity: 0.85;
   transition: max-width 0.3s, height 0.3s;
 }
-.photo-1 {
-  background-image: url('../assets/IMG_1117.JPG');
-}
 .photo-1-about {
-  background-image: url('../assets/IMG_1219.jpg');
+  background-image: url('../assets/IMG_6886.jpg');
 }
-@media (max-width: 991.98px) {
-  .background-photos, .background-photos-about {
-    padding: 0 1rem;
-  }
-  .bg-photo, .bg-photo-about {
-    height: 100%;
-    min-height: 100%;
-    max-width: 98%;
-    margin: 0 auto;
-  }
+.photo-left {
+  background-image: url('../assets/IMG_6904.jpg');
 }
+
 @media (max-width: 767.98px) {
+  
   .background-photos, .background-photos-about {
     padding: 0 0.5rem;
   }
@@ -297,5 +308,100 @@ footer a:hover {
   }
   .background-photos-about {
     padding: 0 !important;
+  }
+  
+  /* Mobile layout for about page */
+  .mobile-text-left {
+    margin-top: 0.1rem !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    max-width: 60% !important;
+    text-align: right !important;
+    right: 0 !important;
+  }
+  
+  .background-photos-about .bg-photo-about {
+    background-position: right center !important;
+  }
+  
+  .mobile-text-left .d-flex.justify-content-start {
+    justify-content: center !important;
+  }
+  
+  .mobile-text-left .d-flex {
+    justify-content: center !important;
+  }
+  
+  .mobile-text-left div[class*="d-flex"] {
+    justify-content: center !important;
+  }
+  
+  .mobile-text-left .mt-4 {
+    display: flex !important;
+    justify-content: center !important;
+    position: absolute !important;
+    left: 20% !important;
+    transform: translateX(-50%) !important;
+    bottom: 1.5rem !important;
+  }
+  .photo-left {
+    background-image: url('../assets/IMG_6904.jpg') !important;
+  }
+  
+  /* Mobile background for index page */
+  .col-12.col-md-4 {
+    background-image: url('../assets/IMG_6885.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    color: black !important;
+  }
+  
+  .col-12.col-md-4 h1,
+  .col-12.col-md-4 p {
+    color: white !important;
+    padding: 0.5rem !important;
+  }
+  
+  .col-12.col-md-4 p {
+    position: absolute !important;
+    top: 2rem !important;
+    right: 0.5rem !important;
+    max-width: 80% !important;
+    text-align: right !important;
+  }
+  
+  /* Hide existing background photos on mobile */
+  .background-photos {
+    display: none !important;
+  }
+  
+  .bg-photo {
+    display: none !important;
+  }
+  
+  /* Hide photo columns on mobile for index page */
+  .col-md-4 .bg-photo {
+    display: none !important;
+  }
+  
+  /* Ensure text column takes full width on mobile */
+  .col-12.col-md-4 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+.photo-right {
+  background-image: url('../assets/IMG_6901.JPG');
+}
+@media (max-width: 991.98px) {
+  .background-photos, .background-photos-about {
+    padding: 0 1rem;
+  }
+  .bg-photo, .bg-photo-about {
+    height: 100%;
+    min-height: 100%;
+    max-width: 98%;
+    margin: 0 auto;
   }
 }

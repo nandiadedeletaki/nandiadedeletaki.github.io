@@ -24,7 +24,7 @@
   <!-- Header -->
   <header class="py-3 border-bottom bg-custom">
     <div class="container text-center">
-      <h1 class="fw-bold mb-3">Nandia Dedeletakis</h1>
+      <h1 class="fw-bold mb-3 header-title">Nandia Dedeletakis</h1>
       <nav class="nav justify-content-center">
         <a class="nav-link px-3" href="index.html">Home</a>
         <a class="nav-link px-3" href="about.html">About</a>
@@ -46,31 +46,41 @@
   </header>
 
   <!-- Main Content -->
-  <main class="container my-5 flex-grow-1 d-flex justify-content-center position-relative" style="overflow: hidden;">
-    <div class="background-photos position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-between align-items-center" style="z-index: 1; pointer-events: none; padding: 0 2rem;">
-      <div class="bg-photo photo-1 mx-2"></div>
+  <main class="flex-grow-1 d-flex justify-content-center position-relative" style="overflow: hidden; margin: 0; padding: 0;">
+    <div class="row w-100 h-100 position-relative" style="z-index: 2; margin: 0;">
+      <!-- Left Image Column -->
+      <div class="col-md-4 p-0 d-none d-md-block">
+        <div class="bg-photo photo-left h-100" style="background-size: cover; background-position: center;"></div>
+      </div>
+      
+      <!-- Middle Text Column -->
+      <div class="col-12 col-md-4 d-flex align-items-center justify-content-center p-4" style="background: #F9F6EE; font-style: italic;">
+        <div class="text-center">
+          <p>
+          I provide expert academic support for students, researchers, and professionals at 
+          various stages of their educational and professional journeys. Whether you are preparing a 
+          PhD application, into doctoral research, developing academic writing skills, or working 
+          towards A-Level Literature examinations, I offer structured instruction and editorial 
+          guidance tailored to your specific goals.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Right Image Column -->
+      <div class="col-md-4 p-0 d-none d-md-block">
+        <div class="bg-photo photo-right h-100" style="background-size: cover; background-position: center;"></div>
+      </div>
     </div>
-    <div class="text-box text-center p-4 shadow rounded position-relative" style="z-index: 2; background: rgba(255,255,255,0.95);">
-        <h1 class="mb-3">Welcome</h1>
-        <h2 style="padding-top: 1rem;" class="mb-4">Thank you for coming here!</h2>
-        <p style="padding-top: 2rem;">
-        I provide expert academic support for students, researchers, and professionals at 
-        various stages of their educational and professional journeys. Whether you are preparing a 
-        PhD application, into doctoral research, developing academic writing skills, or working 
-        towards A-Level Literature examinations, I offer structured instruction and editorial 
-        guidance tailored to your specific goals.
-        </p>
-    </div>
-    </main>
+  </main>
 
 
   <!-- Footer -->
  <footer class="text-center py-4 border-top bg-custom">
   <div class="container">
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-      <a href="https://instagram.com/yourprofile" target="_blank" class="text-decoration-none">
+      <!-- <a href="https://instagram.com/yourprofile" target="_blank" class="text-decoration-none">
         <i class="fa-brands fa-instagram"></i> Instagram
-      </a>
+      </a> -->
       <a href="tel:+35797803187" class="text-decoration-none">
         <i class="fa-solid fa-phone"></i> +35797803187
         </a>
