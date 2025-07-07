@@ -1,0 +1,17 @@
+{
+  "name": "Nandia Dedeletaki",
+  "short_name": "Nandia",
+  "description": "Academic support for students, researchers, and professionals",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9F6EE",
+  "theme_color": "#F9F6EE",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+} 
